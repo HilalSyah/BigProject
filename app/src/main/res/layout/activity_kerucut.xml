@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Persegi">
+
+    <ImageView
+        android:id="@+id/judul1"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/txtkerucut"
+        />
+
+    <ImageView
+        android:id="@+id/rmsPesegi"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/rmskerucut"
+        app:layout_constraintEnd_toStartOf="@+id/Persegi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul1"
+        android:layout_marginTop="-50dp"
+        />
+
+    <ImageView
+        android:id="@+id/Persegi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/krucut"
+        app:layout_constraintTop_toBottomOf="@+id/judul1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rmsPesegi"
+        android:layout_marginTop="38dp"
+        />
+
+
+    <ImageView
+        android:id="@+id/ketPersegi"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/ketkerucut"
+        app:layout_constraintTop_toBottomOf="@+id/rmsPesegi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="-80dp"
+        android:layout_marginEnd="160dp"
+        />
+
+    <ImageView
+        android:id="@+id/hitungluas"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:src="@drawable/hiitungvolume"
+        app:layout_constraintTop_toBottomOf="@+id/Persegi"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/hasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/hitungluas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="15dp"
+        />
+
+    <EditText
+        android:id="@+id/inputan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Jari Jari Lingkaran"
+        app:layout_constraintTop_toBottomOf="@+id/hasil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="5dp"
+        />
+
+    <EditText
+        android:id="@+id/inputan2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Masukkan Tinggi Kerucut"
+        app:layout_constraintTop_toBottomOf="@+id/inputan"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        />
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculate"
+        app:layout_constraintTop_toBottomOf="@+id/inputan2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
